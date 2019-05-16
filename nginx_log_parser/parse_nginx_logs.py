@@ -9,6 +9,7 @@ import datetime
 import calendar
 
 NOT_FOUND = ''
+# see https://stackoverflow.com/questions/3418050/month-name-to-month-number-and-vice-versa-in-python
 MONTH_NAME_DICT = {v: k for k,v in enumerate(calendar.month_abbr)}
 
 def main():
