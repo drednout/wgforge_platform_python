@@ -18,8 +18,8 @@ def main():
         sys.exit(1)
     path = sys.argv[1]
 
-    resp_time_re = re.compile(r'r:[0-9]+[.][0-9]+')
-    upstream_time_re = re.compile(r'up:[0-9]+[.][0-9]+')
+    resp_time_re = re.compile(r'r:([0-9]+[.][0-9]+)')
+    upstream_time_re = re.compile(r'up:([0-9]+[.][0-9]+)')
     http_url_re = re.compile(r'"(POST|GET|PUT|DELETE) (/[a-zA-Z0-9/]*) HTTP/\d.\d"')
     src_ip_re = re.compile(r'\d{1,3}[.]\d{1,3}[.]\d{1,3}[.]\d{1,3}')
     datetime_re = re.compile(r'\[(\d{1,2})/([a-zA-Z]+)/(\d{4}):(\d{2}):(\d{2}):(\d{2}).*\]')
@@ -36,11 +36,11 @@ def main():
 
         resp_time_match = resp_time_re.search(line)
         if resp_time_match:
-            resp_time = resp_time_match.group(0)
+            resp_time = resp_time_match.group(1)
 
         upstream_time_match = upstream_time_re.search(line)
         if upstream_time_match:
-            upstream_time = upstream_time_match.group(0)
+            upstream_time = upstream_time_match.group(1)
 
         http_url_match = http_url_re.search(line)
         if http_url_match:
