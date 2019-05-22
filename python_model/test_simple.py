@@ -1,5 +1,10 @@
 from simple.db import db_connection, db_pool_connection
 from simple.player import Player
+from simple.money import (
+    Money,
+    GOLD_CURRENCY_CODE,
+    SILVER_CURRENCY_CODE
+)
 
 
 def prepare_db():
@@ -7,6 +12,7 @@ def prepare_db():
     with db_connection.cursor() as cursor:
         print("INFO: truncate player")
         cursor.execute("TRUNCATE player")
+        cursor.execute("TRUNCATE money")
 
 
 def do_smoke_test():
@@ -16,6 +22,13 @@ def do_smoke_test():
 
     player2 = Player(db_connection=db_connection)
     player2.load_by_nickname(nickname="Vasya")
+
+    player_money = Money(player_id=player1.id, db_connection=db_connection)
+    player_money.init()
+    player_money.give_money(GOLD_CURRENCY_CODE, 100)
+    player_money.give_money(SILVER_CURRENCY_CODE, 1000)
+    player_money.take_money(GOLD_CURRENCY_CODE, 10)
+    player_money.take_money(SILVER_CURRENCY_CODE, 100)
 
 
 def do_pool_test():

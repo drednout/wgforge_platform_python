@@ -16,8 +16,17 @@
           <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/simple/player.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-215">
-                  <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+                <state relative-caret-position="585">
+                  <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="money.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/simple/money.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="11" selection-start-column="11" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -34,8 +43,8 @@
           <file leaf-file-name="test_simple.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_simple.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+                <state relative-caret-position="325">
+                  <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
                   <folding>
                     <element signature="e#0#55#0" expanded="true" />
                   </folding>
@@ -75,7 +84,7 @@
           <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/orm/model.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
+                <state relative-caret-position="360">
                   <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#55#0" expanded="true" />
@@ -142,11 +151,12 @@
         <option value="$PROJECT_DIR$/orm/model.py" />
         <option value="$PROJECT_DIR$/test_orm.py" />
         <option value="$PROJECT_DIR$/simple/player.py" />
+        <option value="$PROJECT_DIR$/simple/money.py" />
         <option value="$PROJECT_DIR$/test_simple.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1920" />
     <option name="y" value="365" />
     <option name="width" value="1276" />
@@ -219,7 +229,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="-3" width="1926" height="1102" extended-state="6" />
+    <frame x="1917" y="-3" width="1926" height="1102" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11374407" />
@@ -299,16 +309,6 @@
     <entry file="file://$PROJECT_DIR$/simple/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/orm/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/error.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -323,13 +323,6 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -353,10 +346,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/orm/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/money.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_simple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="325">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
